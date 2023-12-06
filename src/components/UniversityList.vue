@@ -27,7 +27,7 @@ export default {
   methods: {
     async fetchUniversities() {
       try {
-        const response = await axios.get('https://teja-moparthi.netlify.app/api');
+        const response = await axios.get('https://teja-moparthi-university.netlify.app/api');
         this.universities = response.data['Top Universities in the world'];
       } catch (error) {
         console.error(error);
